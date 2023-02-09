@@ -1,0 +1,68 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<title> set Reminder  </title>  
+<style>   
+Body {  
+  font-family: Times New Roman;  
+  background-color: rgb(250, 249, 249);  
+}  
+button {   
+       
+       width: 50%;  
+        color: black;   
+        padding: 10px;   
+        margin: 15px 0px;   
+        border: 2px solid rgb(110, 100, 110);   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f8f7f7;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 10px 0;  
+        padding: 12px 12px;   
+        display: inline-block;   
+        border: 2px solid rgb(2, 14, 2);   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }
+</style>   
+</head>    
+<body>    
+    <center> <h1>Set a new Reminder </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label for="Reminder">Select a Date:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit">
+            <br><br>
+            <label for="Subject">Subject:</label>
+            
+            <select name="Subject" id="Subject">
+            <option value="CD">CD</option>
+            <option value="SAP">SAP</option>
+            <option value="SD">SD</option>
+            <option value="DBMS">DBMS</option>
+            </select>
+
+            <br><br>
+            <label>Description : </label>   
+            <input type="text" placeholder="Description" name="text area" required>
+            <br><br>
+            <h2>Recur for next</h2>
+            <input type="checkbox" id="7 Days" name="7Days">
+            <label for="days"> 7 Days</label><br>
+            <input type="checkbox" id="5 Days" name="5Days">
+            <label for="days"> 5 Dasy</label><br>
+            <input type="checkbox" id="3 Days" name="3Days">
+            <label for="days"> 3 Days</label><br><br>
+            <button onclick="document.location='home.html'">Back</button>  
+            <button>continue</button>
+            
+    </form>     
+</body>     
+</html>  

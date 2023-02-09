@@ -1,0 +1,51 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<title> Reminder  </title>  
+<style>   
+Body {  
+  font-family: Times New Roman;  
+  background-color: rgb(215, 224, 130);  
+}  
+button {   
+       
+       width: 50%;  
+        color: black;   
+        padding: 10px;   
+        margin: 15px 0px;   
+        border: 2px solid rgb(10, 2, 7);   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #070000;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 10px 0;  
+        padding: 12px 12px;   
+        display: inline-block;   
+        border: 2px solid rgb(2, 14, 2);   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }
+</style>   0
+</head>    
+<body>    
+    <center> <h1>LOGIN PAGE </h1> </center>   
+    <form action="home.html">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button onclick="document.location='home.html'">Login</button>      
+           
+            <button onclick="document.location='cancel.html'">Cancel</button>
+            <input type="checkbox" id="Remember" name="Remember me">
+            <label for="days"> Remember me</label><br>
+        </div>   
+    </form>     
+</body>     
+</html>  

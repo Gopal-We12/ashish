@@ -1,0 +1,50 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<title> Reminder </title>  
+<style>   
+Body {  
+  font-family: Times New Roman;  
+  background-color: hwb(80 96% 3%);  
+}  
+button {   
+       
+       width: 50%;  
+        color: black;   
+        padding: 10px;   
+        margin: 15px 0px;   
+        border: 2px solid rgb(110, 100, 110);   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #fafafa;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 10px 0;  
+        padding: 12px 12px;   
+        display: inline-block;   
+        border: 2px solid rgb(2, 14, 2);   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }
+</style>   
+</head>    
+<body>    
+    <center> <h1>Welcome to the Reminder Application </h1> </center>   
+    <center> <h2>Today is Tuesday, 14th of Febuary </h2> </center>   
+        <div class="container">     
+            <center><button onclick="document.location='setreminder.html'">Set Reminder</button></center>
+            <center><button onclick="document.location='modify.html'">Modify Reminder</button></center>
+            <center><button onclick="document.location='disable.html'">Disable Reminder</button></center>
+            <center><button onclick="document.location='delete.html'">Delete Reminder</button></center>
+            <center><button onclick="document.location='enablereminder.html'">Enable Reminder</button></center>
+            <center><button onclick="document.location='view.html'">View Reminder</button></center>
+            
+                <a href="login.html">BACK</a><br><br>
+                <a href="logout.html">Logout</a><br><br>
+        </div>  
+</body>     
+</html>  
